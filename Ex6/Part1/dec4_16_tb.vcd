@@ -1,0 +1,54 @@
+$date
+	Sat Nov 20 23:42:16 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module dec4_16_tb $end
+$var wire 16 ! Y [0:15] $end
+$var reg 1 " En $end
+$var reg 4 # W [3:0] $end
+$scope module uut $end
+$var wire 1 " En $end
+$var wire 4 $ W [3:0] $end
+$var reg 16 % Y [0:15] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110 %
+b110 $
+b110 #
+1"
+b110 !
+$end
+#21
+b1110 !
+b1110 %
+b1110 #
+b1110 $
+#42
+b0 !
+b0 %
+0"
+#63
+b1111 !
+b1111 %
+1"
+b1111 #
+b1111 $
+#84
+b1000 !
+b1000 %
+b1000 #
+b1000 $
+#105
+b1100 !
+b1100 %
+b1100 #
+b1100 $
+#126

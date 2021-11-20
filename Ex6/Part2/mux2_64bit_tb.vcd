@@ -1,0 +1,37 @@
+$date
+	Sat Nov 20 21:39:26 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mux2_64bit_tb $end
+$var wire 64 ! f [63:0] $end
+$var reg 1 " s $end
+$var reg 64 # w0 [63:0] $end
+$var reg 64 $ w1 [63:0] $end
+$scope module uut $end
+$var wire 1 " s $end
+$var wire 64 % w0 [63:0] $end
+$var wire 64 & w1 [63:0] $end
+$var wire 64 ' f [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101010 '
+b101010 &
+b110100 %
+b101010 $
+b110100 #
+1"
+b101010 !
+$end
+#21
+b110100 !
+b110100 '
+0"
+#42
