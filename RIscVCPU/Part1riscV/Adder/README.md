@@ -1,5 +1,5 @@
 ## Carry lookahead adder
-![adder](../RIscVCPU/Part1riscV/Adder/adder.jpg ?raw=true)
+![adder](https://github.com/EnigmaticAbyss/DigitalDesignLab/tree/main/RIscVCPU/Part1riscV/Adder/adder.jpg)
 check this [link](https://en.wikipedia.org/wiki/Carry-lookahead_adder) for more information .
 
 ```bash
