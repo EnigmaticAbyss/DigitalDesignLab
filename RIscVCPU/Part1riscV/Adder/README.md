@@ -1,8 +1,7 @@
 ## Carry lookahead adder
-![text](./RIscVCPU/Part1riscV/Adder/adder.jpg ?raw=true)
+![adder](../RIscVCPU/Part1riscV/Adder/adder.jpg ?raw=true)
 check this [link](https://en.wikipedia.org/wiki/Carry-lookahead_adder) for more information .
-/RIscVCPU/Part1riscV/Adder
-https://github.com/[EnigmaticAbyss]/[DigitalDesignLab]/blob/[main]
+
 ```bash
 X=11 X=11 result=110
  11 + 11 = 110
