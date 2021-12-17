@@ -1,5 +1,5 @@
 ## ALU
-![ALU](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/ALU/ALU.png)
+![ALU](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/ALU/alu.png)
 
 
 
