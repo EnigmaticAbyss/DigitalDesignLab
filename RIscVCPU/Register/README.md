@@ -9,5 +9,5 @@ These are a group of registers, check this [link](https://en.wikipedia.org/wiki/
 
 ## Test bench
 ```bash
-check out the gtkwave file it will completely guide you.
+check out the [gtkwave](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/Register/Registergtk.png) file it will completely guide you.
 ```
