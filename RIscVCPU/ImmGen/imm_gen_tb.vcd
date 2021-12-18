@@ -1,0 +1,67 @@
+$date
+	Sat Dec 18 14:00:25 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module imm_gen_tb $end
+$var wire 64 ! immOut [63:0] $end
+$var reg 1 " clk $end
+$var reg 32 # instruction [31:0] $end
+$scope module imm_gen_instance $end
+$var wire 32 $ instruction [31:0] $end
+$var wire 64 % out [63:0] $end
+$var wire 7 & opcode [6:0] $end
+$var reg 64 ' immOut [63:0] $end
+$upscope $end
+$scope task display $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+bx $
+bx #
+0"
+bx !
+$end
+#5
+b11110000 !
+b11110000 %
+b11110000 '
+b11 &
+b1111000001010011010010000011 #
+b1111000001010011010010000011 $
+1"
+#10
+0"
+#15
+b100011 &
+b1110100101010011100000100011 #
+b1110100101010011100000100011 $
+1"
+#20
+0"
+#25
+b11111010000 !
+b11111010000 %
+b11111010000 '
+b1100011 &
+b1111100101101010000100001100011 #
+b1111100101101010000100001100011 $
+1"
+#30
+0"
+#35
+1"
+#40
+0"
+#45
+1"
+#46
