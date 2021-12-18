@@ -4,6 +4,8 @@
 A carry-lookahead adder (CLA) or fast adder is a type of electronics adder used in digital logic. A carry-lookahead adder improves speed by reducing the amount of time required to determine carry bits.
 check this [link](https://en.wikipedia.org/wiki/Carry-lookahead_adder) for more information .
 
+
+## Test bench
 ```bash
 X=11 X=11 result=110
  11 + 11 = 110
