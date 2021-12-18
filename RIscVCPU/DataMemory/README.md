@@ -9,5 +9,5 @@ The memory unit needs a read signal, since, unlike the register file, reading th
 
 
 
-check this gtk picture [link](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/DataMemory/data_memorygtk.png) for more information .
+check  [this gtk picture](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/DataMemory/data_memorygtk.png) for more information .
 
