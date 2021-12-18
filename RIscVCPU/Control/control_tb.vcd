@@ -1,0 +1,129 @@
+$date
+	Sat Dec 18 10:32:01 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module control_tb $end
+$var wire 1 ! regWrite $end
+$var wire 7 " opcode [6:0] $end
+$var wire 1 # memWrite $end
+$var wire 1 $ memToReg $end
+$var wire 1 % memRead $end
+$var wire 8 & controls [7:0] $end
+$var wire 1 ' branch $end
+$var wire 1 ( aluSrc $end
+$var wire 2 ) aluOp [1:0] $end
+$var reg 1 * clk $end
+$var reg 32 + instruction [31:0] $end
+$scope module ctrl $end
+$var wire 7 , opcode [6:0] $end
+$var wire 1 ! regWrite $end
+$var wire 1 # memWrite $end
+$var wire 1 $ memToReg $end
+$var wire 1 % memRead $end
+$var wire 1 ' branch $end
+$var wire 1 ( aluSrc $end
+$var wire 2 - aluOp [1:0] $end
+$var reg 8 . controls [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx .
+bx -
+bx ,
+bx +
+0*
+bx )
+x(
+x'
+bx &
+x%
+x$
+x#
+bx "
+x!
+$end
+#5
+0(
+0$
+1!
+0%
+0#
+0'
+b100010 &
+b10 )
+b10 -
+b100010 .
+b110011 "
+b110011 ,
+b10010001101000101011000110011 +
+1*
+#10
+0*
+#15
+1(
+1$
+1%
+b11110000 &
+b0 )
+b0 -
+b11110000 .
+b11 "
+b11 ,
+b10010001101000101011000000011 +
+1*
+#20
+0*
+#25
+x$
+0!
+0%
+b1x001000 &
+1#
+b1x001000 .
+b100011 "
+b100011 ,
+b10010001101000101011010100011 +
+1*
+#30
+0*
+#35
+0(
+0#
+1'
+b0x000101 &
+b1 )
+b1 -
+b0x000101 .
+b1100011 "
+b1100011 ,
+b10010001101000101011001100011 +
+1*
+#40
+0*
+#45
+x(
+x!
+x%
+x#
+x'
+bx &
+bx )
+bx -
+bx .
+b1111111 "
+b1111111 ,
+b10010001101000101011011111111 +
+1*
+#50
+0*
+#55
+1*
+#60
+0*
