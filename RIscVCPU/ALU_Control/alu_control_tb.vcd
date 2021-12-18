@@ -1,0 +1,199 @@
+$date
+	Sat Dec 18 11:14:03 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module alu_control_tb $end
+$var wire 1 ! regWrite $end
+$var wire 7 " opcode [6:0] $end
+$var wire 1 # memWrite $end
+$var wire 1 $ memToReg $end
+$var wire 1 % memRead $end
+$var wire 7 & funct7 [6:0] $end
+$var wire 3 ' funct3 [2:0] $end
+$var wire 8 ( controls [7:0] $end
+$var wire 1 ) branch $end
+$var wire 1 * aluSrc $end
+$var wire 2 + aluOp [1:0] $end
+$var wire 4 , aluControl [3:0] $end
+$var reg 1 - clk $end
+$var reg 32 . instruction [31:0] $end
+$scope module alu_ctrl $end
+$var wire 3 / funct3 [2:0] $end
+$var wire 7 0 funct7 [6:0] $end
+$var wire 2 1 aluOp [1:0] $end
+$var reg 4 2 aluControl [3:0] $end
+$upscope $end
+$scope module ctrl $end
+$var wire 7 3 opcode [6:0] $end
+$var wire 1 ! regWrite $end
+$var wire 1 # memWrite $end
+$var wire 1 $ memToReg $end
+$var wire 1 % memRead $end
+$var wire 1 ) branch $end
+$var wire 1 * aluSrc $end
+$var wire 2 4 aluOp [1:0] $end
+$var reg 8 5 controls [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+0-
+bx ,
+bx +
+x*
+x)
+bx (
+bx '
+bx &
+x%
+x$
+x#
+bx "
+x!
+$end
+#5
+b10 ,
+b10 2
+1*
+1$
+1!
+1%
+0#
+0)
+b11110000 (
+b0 +
+b0 1
+b0 4
+b11110000 5
+b11 "
+b11 3
+b10 '
+b10 /
+b0 &
+b0 0
+b10100010010000000000011 .
+1-
+#10
+0-
+#15
+x$
+0!
+0%
+b1x001000 (
+1#
+b1x001000 5
+b100011 "
+b100011 3
+b10010001010100011 .
+1-
+#20
+0-
+#25
+b110 ,
+b110 2
+0*
+0#
+1)
+b0x000101 (
+b1 +
+b1 1
+b1 4
+b0x000101 5
+b1100011 "
+b1100011 3
+b100 '
+b100 /
+b100000100001001100011 .
+1-
+#30
+0-
+#35
+b10 ,
+b10 2
+0$
+1!
+0)
+b100010 (
+b10 +
+b10 1
+b10 4
+b100010 5
+b110011 "
+b110011 3
+b0 '
+b0 /
+b1000001000000000110011 .
+1-
+#40
+0-
+#45
+b110 ,
+b110 2
+b100000 &
+b100000 0
+b1000001111111111000111110110011 .
+1-
+#50
+0-
+#55
+b0 ,
+b0 2
+b111 '
+b111 /
+b0 &
+b0 0
+b10101101111000000110011 .
+1-
+#60
+0-
+#65
+b1 ,
+b1 2
+b110 '
+b110 /
+b1011110001110000110110011 .
+1-
+#70
+0-
+#75
+x*
+x$
+x!
+x%
+x#
+x)
+bx (
+bx +
+bx 1
+bx 4
+bx ,
+bx 2
+bx 5
+b1111111 "
+b1111111 3
+b111 '
+b111 /
+b1111111 &
+b1111111 0
+b11111111111111111111111111111111 .
+1-
+#80
+0-
+#85
+1-
+#90
+0-

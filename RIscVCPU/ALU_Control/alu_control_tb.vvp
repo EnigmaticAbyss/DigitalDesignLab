@@ -1,0 +1,256 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001d6f36b5290 .scope module, "alu_control_tb" "alu_control_tb" 2 5;
+ .timescale -9 -9;
+v000001d6f371a0d0_0 .net "aluControl", 3 0, v000001d6f36ada70_0;  1 drivers
+v000001d6f371a7b0_0 .net "aluOp", 1 0, L_000001d6f371b930;  1 drivers
+v000001d6f371a5d0_0 .net "aluSrc", 0 0, L_000001d6f371ae90;  1 drivers
+v000001d6f371a490_0 .net "branch", 0 0, L_000001d6f371af30;  1 drivers
+v000001d6f371a170_0 .var "clk", 0 0;
+v000001d6f371afd0_0 .net "controls", 7 0, L_000001d6f371b6b0;  1 drivers
+v000001d6f371a3f0_0 .net "funct3", 2 0, L_000001d6f371adf0;  1 drivers
+v000001d6f371b610_0 .net "funct7", 6 0, L_000001d6f3719f90;  1 drivers
+v000001d6f371a990_0 .var "instruction", 31 0;
+v000001d6f371b7f0_0 .net "memRead", 0 0, L_000001d6f371a030;  1 drivers
+v000001d6f3719e50_0 .net "memToReg", 0 0, L_000001d6f371b750;  1 drivers
+v000001d6f371a530_0 .net "memWrite", 0 0, L_000001d6f371b890;  1 drivers
+v000001d6f371ad50_0 .net "opcode", 6 0, L_000001d6f371a350;  1 drivers
+v000001d6f371a850_0 .net "regWrite", 0 0, L_000001d6f371b070;  1 drivers
+E_000001d6f36af910 .event posedge, v000001d6f371a170_0;
+LS_000001d6f371b6b0_0_0 .concat [ 2 1 1 1], L_000001d6f371b930, L_000001d6f371af30, L_000001d6f371b890, L_000001d6f371a030;
+LS_000001d6f371b6b0_0_4 .concat [ 1 1 1 0], L_000001d6f371b070, L_000001d6f371b750, L_000001d6f371ae90;
+L_000001d6f371b6b0 .concat [ 5 3 0 0], LS_000001d6f371b6b0_0_0, LS_000001d6f371b6b0_0_4;
+L_000001d6f371a350 .part v000001d6f371a990_0, 0, 7;
+L_000001d6f371adf0 .part v000001d6f371a990_0, 12, 3;
+L_000001d6f3719f90 .part v000001d6f371a990_0, 25, 7;
+S_000001d6f36b5420 .scope module, "alu_ctrl" "alu_control" 2 24, 3 1 0, S_000001d6f36b5290;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 2 "aluOp";
+    .port_info 1 /INPUT 7 "funct7";
+    .port_info 2 /INPUT 3 "funct3";
+    .port_info 3 /OUTPUT 4 "aluControl";
+L_000001d6f36bd0f0 .functor OR 7, L_000001d6f371a8f0, L_000001d6f3719f90, C4<0000000>, C4<0000000>;
+L_000001d6f36bcc20 .functor OR 7, L_000001d6f36bd0f0, L_000001d6f371b9d0, C4<0000000>, C4<0000000>;
+v000001d6f36aded0_0 .net *"_ivl_1", 6 0, L_000001d6f371a8f0;  1 drivers
+L_000001d6f371be60 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v000001d6f36ade30_0 .net *"_ivl_10", 3 0, L_000001d6f371be60;  1 drivers
+v000001d6f36adf70_0 .net *"_ivl_11", 6 0, L_000001d6f36bcc20;  1 drivers
+L_000001d6f371be18 .functor BUFT 1, C4<00000>, C4<0>, C4<0>, C4<0>;
+v000001d6f36ad930_0 .net *"_ivl_4", 4 0, L_000001d6f371be18;  1 drivers
+v000001d6f36ad9d0_0 .net *"_ivl_5", 6 0, L_000001d6f36bd0f0;  1 drivers
+v000001d6f36ad6b0_0 .net *"_ivl_7", 6 0, L_000001d6f371b9d0;  1 drivers
+v000001d6f36ada70_0 .var "aluControl", 3 0;
+v000001d6f36ad110_0 .net "aluOp", 1 0, L_000001d6f371b930;  alias, 1 drivers
+v000001d6f36adb10_0 .net "funct3", 2 0, L_000001d6f371adf0;  alias, 1 drivers
+v000001d6f36adbb0_0 .net "funct7", 6 0, L_000001d6f3719f90;  alias, 1 drivers
+E_000001d6f36ae9d0 .event anyedge, L_000001d6f36bcc20;
+L_000001d6f371a8f0 .concat [ 2 5 0 0], L_000001d6f371b930, L_000001d6f371be18;
+L_000001d6f371b9d0 .concat [ 3 4 0 0], L_000001d6f371adf0, L_000001d6f371be60;
+S_000001d6f36b8ff0 .scope module, "ctrl" "control" 2 23, 4 1 0, S_000001d6f36b5290;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 7 "opcode";
+    .port_info 1 /OUTPUT 1 "branch";
+    .port_info 2 /OUTPUT 1 "memRead";
+    .port_info 3 /OUTPUT 1 "memToReg";
+    .port_info 4 /OUTPUT 2 "aluOp";
+    .port_info 5 /OUTPUT 1 "memWrite";
+    .port_info 6 /OUTPUT 1 "aluSrc";
+    .port_info 7 /OUTPUT 1 "regWrite";
+v000001d6f36ad750_0 .net *"_ivl_9", 7 0, v000001d6f36add90_0;  1 drivers
+v000001d6f36adc50_0 .net "aluOp", 1 0, L_000001d6f371b930;  alias, 1 drivers
+v000001d6f36ad570_0 .net "aluSrc", 0 0, L_000001d6f371ae90;  alias, 1 drivers
+v000001d6f36adcf0_0 .net "branch", 0 0, L_000001d6f371af30;  alias, 1 drivers
+v000001d6f36add90_0 .var "controls", 7 0;
+v000001d6f36ad1b0_0 .net "memRead", 0 0, L_000001d6f371a030;  alias, 1 drivers
+v000001d6f36ad2f0_0 .net "memToReg", 0 0, L_000001d6f371b750;  alias, 1 drivers
+v000001d6f36ad390_0 .net "memWrite", 0 0, L_000001d6f371b890;  alias, 1 drivers
+v000001d6f36ad430_0 .net "opcode", 6 0, L_000001d6f371a350;  alias, 1 drivers
+v000001d6f36ad4d0_0 .net "regWrite", 0 0, L_000001d6f371b070;  alias, 1 drivers
+E_000001d6f36aec10 .event anyedge, v000001d6f36ad430_0;
+L_000001d6f371ae90 .part v000001d6f36add90_0, 7, 1;
+L_000001d6f371b750 .part v000001d6f36add90_0, 6, 1;
+L_000001d6f371b070 .part v000001d6f36add90_0, 5, 1;
+L_000001d6f371a030 .part v000001d6f36add90_0, 4, 1;
+L_000001d6f371b890 .part v000001d6f36add90_0, 3, 1;
+L_000001d6f371af30 .part v000001d6f36add90_0, 2, 1;
+L_000001d6f371b930 .part v000001d6f36add90_0, 0, 2;
+    .scope S_000001d6f36b8ff0;
+T_0 ;
+    %wait E_000001d6f36aec10;
+    %load/vec4 v000001d6f36ad430_0;
+    %dup/vec4;
+    %pushi/vec4 51, 0, 7;
+    %cmp/x;
+    %jmp/1 T_0.0, 4;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 7;
+    %cmp/x;
+    %jmp/1 T_0.1, 4;
+    %dup/vec4;
+    %pushi/vec4 35, 0, 7;
+    %cmp/x;
+    %jmp/1 T_0.2, 4;
+    %dup/vec4;
+    %pushi/vec4 99, 0, 7;
+    %cmp/x;
+    %jmp/1 T_0.3, 4;
+    %pushi/vec4 255, 255, 8;
+    %assign/vec4 v000001d6f36add90_0, 0;
+    %jmp T_0.5;
+T_0.0 ;
+    %pushi/vec4 34, 0, 8;
+    %assign/vec4 v000001d6f36add90_0, 0;
+    %jmp T_0.5;
+T_0.1 ;
+    %pushi/vec4 240, 0, 8;
+    %assign/vec4 v000001d6f36add90_0, 0;
+    %jmp T_0.5;
+T_0.2 ;
+    %pushi/vec4 200, 64, 8;
+    %assign/vec4 v000001d6f36add90_0, 0;
+    %jmp T_0.5;
+T_0.3 ;
+    %pushi/vec4 69, 64, 8;
+    %assign/vec4 v000001d6f36add90_0, 0;
+    %jmp T_0.5;
+T_0.5 ;
+    %pop/vec4 1;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_000001d6f36b5420;
+T_1 ;
+    %wait E_000001d6f36ae9d0;
+    %load/vec4 v000001d6f36ad110_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.0, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.1, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 2;
+    %cmp/u;
+    %jmp/1 T_1.2, 6;
+    %pushi/vec4 15, 15, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.4;
+T_1.0 ;
+    %pushi/vec4 2, 0, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.4;
+T_1.1 ;
+    %pushi/vec4 6, 0, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.4;
+T_1.2 ;
+    %load/vec4 v000001d6f36adbb0_0;
+    %load/vec4 v000001d6f36adb10_0;
+    %concat/vec4; draw_concat_vec4
+    %dup/vec4;
+    %pushi/vec4 0, 0, 10;
+    %cmp/x;
+    %jmp/1 T_1.5, 4;
+    %dup/vec4;
+    %pushi/vec4 7, 0, 10;
+    %cmp/x;
+    %jmp/1 T_1.6, 4;
+    %dup/vec4;
+    %pushi/vec4 6, 0, 10;
+    %cmp/x;
+    %jmp/1 T_1.7, 4;
+    %dup/vec4;
+    %pushi/vec4 256, 0, 10;
+    %cmp/x;
+    %jmp/1 T_1.8, 4;
+    %pushi/vec4 15, 15, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.10;
+T_1.5 ;
+    %pushi/vec4 2, 0, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.10;
+T_1.6 ;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.10;
+T_1.7 ;
+    %pushi/vec4 1, 0, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.10;
+T_1.8 ;
+    %pushi/vec4 6, 0, 4;
+    %assign/vec4 v000001d6f36ada70_0, 0;
+    %jmp T_1.10;
+T_1.10 ;
+    %pop/vec4 1;
+    %jmp T_1.4;
+T_1.4 ;
+    %pop/vec4 1;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_000001d6f36b5290;
+T_2 ;
+    %delay 5, 0;
+    %load/vec4 v000001d6f371a170_0;
+    %nor/r;
+    %assign/vec4 v000001d6f371a170_0, 0;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_000001d6f36b5290;
+T_3 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001d6f371a170_0, 0;
+    %vpi_call 2 29 "$dumpfile", "alu_control_tb.vcd" {0 0 0};
+    %vpi_call 2 30 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001d6f36b5290 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 5316611, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 32 "$strobe", "add (ld):\011\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 74403, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 34 "$strobe", "add (sd):\011\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 1065571, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 36 "$strobe", "subtract (beq):\011\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 2129971, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 38 "$strobe", "add (R-type):\011\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 1107267507, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 40 "$strobe", "subtract (R-type):\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 5697587, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 42 "$strobe", "AND (R-type):\011\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 24699315, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 44 "$strobe", "OR (R-type):\011\011ALUOp = %b\011\011 aluControl = %b", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %wait E_000001d6f36af910;
+    %pushi/vec4 4294967295, 0, 32;
+    %assign/vec4 v000001d6f371a990_0, 0;
+    %vpi_call 2 46 "$strobe", "ILLEGAL OP:\011\011ALUOp = %b\011\011 aluControl = %b\012", v000001d6f371a7b0_0, v000001d6f371a0d0_0 {0 0 0};
+    %delay 15, 0;
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "alu_control_tb.v";
+    "./alu_control.v";
+    "./../Control/control.v";
