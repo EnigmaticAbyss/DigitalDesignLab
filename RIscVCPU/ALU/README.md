@@ -5,6 +5,8 @@
 
 In computing, an arithmetic logic unit (ALU) is a combinational digital circuit that performs arithmetic and bitwise operations on integer binary numbers, check this [link](https://en.wikipedia.org/wiki/Arithmetic_logic_unit) for more information .
 
+
+## Test bench
 ```bash
 AND unit testing
 00000000ffffffff & 0000000001010101 = 0000000001010101
