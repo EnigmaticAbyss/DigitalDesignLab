@@ -1,0 +1,129 @@
+$date
+	Sat Dec 18 18:15:11 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module multiplexer_4to1_tb $end
+$var wire 1 ! f $end
+$var reg 2 " S [1:0] $end
+$var reg 4 # W [3:0] $end
+$var integer 32 $ i [31:0] $end
+$scope module mux $end
+$var wire 2 % S [1:0] $end
+$var wire 4 & W [3:0] $end
+$var reg 1 ! f $end
+$upscope $end
+$scope task display $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+0!
+$end
+#10
+b1 #
+b1 &
+b1 "
+b1 %
+b1 $
+#20
+b10 #
+b10 &
+b10 "
+b10 %
+b10 $
+#30
+b11 #
+b11 &
+b11 "
+b11 %
+b11 $
+#40
+b100 #
+b100 &
+b0 "
+b0 %
+b100 $
+#50
+b101 #
+b101 &
+b1 "
+b1 %
+b101 $
+#60
+1!
+b110 #
+b110 &
+b10 "
+b10 %
+b110 $
+#70
+0!
+b111 #
+b111 &
+b11 "
+b11 %
+b111 $
+#80
+b1000 #
+b1000 &
+b0 "
+b0 %
+b1000 $
+#90
+b1001 #
+b1001 &
+b1 "
+b1 %
+b1001 $
+#100
+b1010 #
+b1010 &
+b10 "
+b10 %
+b1010 $
+#110
+1!
+b1011 #
+b1011 &
+b11 "
+b11 %
+b1011 $
+#120
+0!
+b1100 #
+b1100 &
+b0 "
+b0 %
+b1100 $
+#130
+b1101 #
+b1101 &
+b1 "
+b1 %
+b1101 $
+#140
+1!
+b1110 #
+b1110 &
+b10 "
+b10 %
+b1110 $
+#150
+b1111 #
+b1111 &
+b11 "
+b11 %
+b1111 $
+#160
+b10000 $
