@@ -6,5 +6,8 @@ There are separate read and write controls, although only one of these may be as
 
 The memory unit needs a read signal, since, unlike the register file, reading the value of an invalid address can cause problems.
 ![Data Memory ](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/DataMemory/data_memory.png)
+
+
+
 check this gtk picture [link](https://github.com/EnigmaticAbyss/DigitalDesignLab/raw/main/RIscVCPU/DataMemory/data_memorygtk.png) for more information .
 
