@@ -9,7 +9,14 @@ Here is a [link](https://en.wikipedia.org/wiki/Multiplexer) for more information
 
 ## Test bench
 ```bash
-immOut = 0000000000000000000000000000000000000000000000000000000011110000
-immOut = 0000000000000000000000000000000000000000000000000000000011110000
-immOut = 0000000000000000000000000000000000000000000000000000011111010000
+A = 0 B = 12345678 selection = 0 out = 0        
+A = 0 B = 12345678 selection = 1 out = 12345678 
+A = 0 B = 87654321 selection = 0 out = 0        
+A = 0 B = 87654321 selection = 1 out = 87654321
+A = 11112222 B = 0 selection = 0 out = 11112222
+A = 11112222 B = 0 selection = 1 out = 0       
+A = 122 B = 0 selection = 1 out = 0
+A = 122 B = 0 selection = 0 out = 122
+A = 11110000 B = 0 selection = 1 out = 0       
+A = 11110000 B = 0 selection = 0 out = 11110000
 ```
